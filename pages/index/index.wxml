@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{groups}}" wx:key="title">
+    <view class="zan-panel-title">{{item.title}}</view>
+    <view class="zan-panel">
+      <navigator class="zan-cell zan-cell--access"wx:for="{{item.group}}" wx:for-item="group" wx:key="article_id" url="/pages/detail/detail?id={{group.article_id}}">
+        <view class="zan-cell__bd">
+          <view class="zan-cell__text">{{group.article_title}}</view>
+          <view class="zan-cell__desc">{{group.tagNames}}</view>
+        </view>
+        <view class="zan-cell__ft">{{group.readNum||100}}</view>
+      </navigator>
+    </view>
+  </block>
+</view>

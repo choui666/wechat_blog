@@ -1,0 +1,13 @@
+/* pages/detail/detail.wxss */
+
+@import '../../wemark/wemark.wxss'
+
+ .wemark_wrapper {
+  margin: 10px 15px;
+}
+
+.wemark_block_h4, .wemark_block_h5, .wemark_block_h6 {
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
