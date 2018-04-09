@@ -1,3 +1,4 @@
 module.exports = {
-  ARTICLES:'articles'
+  ARTICLES:'articles',
+  ARTICLES_TAG: 'articles_tag'
 }

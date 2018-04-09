@@ -1,6 +1,6 @@
 import { showLoading, hideLoading } from './wechat.js';
 
-const URI = 'https://api.it120.cc/choui/api/transmit/'
+const URI = 'https://api.it120.cc/choui/api/transmit'
 const fetch = require('./fetch')
 
 
@@ -15,7 +15,7 @@ function fetchApi(type, params) {
 
 function interceptor(res) {
   res = res.data;
-  if (res.code === 0) {
+  if (res.code === 0 && res.data) {
     if (res.data.status !== '0') { //我的接口出错 
       // showZanToast('出错了')
       return { 'msg': res.data.desc }

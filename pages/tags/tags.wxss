@@ -1,0 +1,4 @@
+/* pages/tags.wxss */
+.zan-tag {
+  margin-left: 10px;
+}

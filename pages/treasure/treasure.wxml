@@ -1,0 +1,9 @@
+<!--treasure.wxml--> 
+<view class="zan-panel" style='margin-top:0px'> 
+  <navigator url="/pages/tags/tags" hover-class="navigator-hover">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">标签</view>
+      <view class="zan-cell__ft">按标签查看文章</view>
+    </view>
+  </navigator> 
+</view>

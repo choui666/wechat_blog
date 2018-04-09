@@ -1,0 +1,9 @@
+<!--pages/tags.wxml-->
+<view class="zan-panel">
+  <view class="zan-font-16">热门标签：</view>
+  <view class="zan-tag  zan-tag--primary zan-tag--plai" wx:for="{{tags}}" wx:key="id">
+    <navigator url="/pages/list/list?tagId={{item.id}}&tagLabel={{item.label}}" hover-class="navigator-hover">
+      {{item.label}}
+    </navigator>
+  </view>
+</view>

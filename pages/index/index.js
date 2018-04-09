@@ -21,12 +21,12 @@ Page({
 
   onReachBottom() {
     if (this.data.hasMore) {
-      this.loadMore(this.data.currentIndex++);
+      this.loadMore(++this.data.currentIndex);
     }
   },
 
   loadMore(index, isRefresh) {
-    app.blog.getArticles(index, 6).then(result => {
+    app.blog.getArticles(index, 9).then(result => {
       //页面显示赋值
       let _arr = [];
       !isRefresh && this.data.groups.forEach(item => {
